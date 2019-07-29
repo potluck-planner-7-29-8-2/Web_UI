@@ -102,6 +102,7 @@ section {
 }
 body {
   line-height: 1;
+  margin-top: 0%;
 }
 ol,
 ul {
@@ -128,8 +129,13 @@ table {
 html {
   font-family: 'Irish Grover', cursive;
   background-color: #16C172;
+  margin-top: 0%;
 }
 header {
+  width: 100%;
+  opacity: 0.8;
+  position: fixed;
+  z-index: 1;
   background-color: #09E85E;
   display: flex;
   align-items: center;
@@ -148,7 +154,7 @@ header img {
 header a {
   margin-right: 6%;
   text-align: center;
-  width: 25%;
+  width: 35%;
   text-decoration: none;
   font-size: 1.5rem;
   padding: 0.7%;
@@ -164,9 +170,13 @@ header a:hover {
 }
 .container {
   width: 90%;
-  margin: 2% auto;
+  margin: 0% auto;
+  padding-top: 15%;
 }
 .row1 {
+  margin-top: 7%;
+  margin-bottom: 7%;
+  padding-bottom: 2%;
   display: flex;
   background-color: #09E85E;
 }
@@ -269,4 +279,34 @@ header a:hover {
 }
 .footer p:hover {
   color: white;
+}
+@media only screen and (max-width: 500px) {
+  .container {
+    padding-top: 40%;
+  }
+  .row1 img {
+    display: none;
+  }
+  header {
+    padding-bottom: 2%;
+    flex-direction: column;
+  }
+  header nav {
+    width: 100%;
+    margin-left: 20%;
+    flex-direction: column;
+  }
+  header a {
+    width: 80%;
+    margin: 2%;
+    padding: 0%;
+  }
+  .boxes {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .boxes .box1 {
+    width: 70%;
+  }
 }
