@@ -351,5 +351,10 @@ header a:hover {
 .flag {
   padding-top: 13%;
   width: 89%;
-  margin: 1% 6%;
+  margin: 1% 5.3%;
+}
+@media only screen and (max-width: 500px) {
+  .containera .items {
+    width: 90%;
+  }
 }
