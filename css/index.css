@@ -133,11 +133,14 @@ html {
 }
 header {
   width: 100%;
+  opacity: 0.6;
   position: fixed;
   z-index: 1;
   background-color: #cddbe6;
   display: flex;
   align-items: center;
+  border-radius: 3%;
+  border-bottom: 5px solid #66afe0;
 }
 header nav {
   width: 90%;
@@ -179,6 +182,7 @@ header a:hover {
   padding-bottom: 2%;
   display: flex;
   background-color: #cddbe6;
+  border-radius: 5%;
 }
 .row1 img {
   opacity: 0.8;
@@ -189,6 +193,7 @@ header a:hover {
   opacity: 0.9;
 }
 .row1 p {
+  padding: 2%;
   color: #66afe0;
   font-size: 2.5rem;
   text-align: center;
@@ -197,6 +202,7 @@ header a:hover {
   color: white;
 }
 .row1 .row1a {
+  border-radius: 10%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -217,6 +223,7 @@ header a:hover {
   padding: 4% 25%;
 }
 .family img {
+  border-radius: 10%;
   margin-top: 4%;
   width: 100%;
   opacity: 0.8;
@@ -228,16 +235,19 @@ header a:hover {
   margin-top: 4%;
   width: 100%;
   opacity: 0.8;
+  border-radius: 10%;
 }
 .food img:hover {
   opacity: 1;
 }
 .boxes {
+  border-radius: 10%;
   display: flex;
   margin-top: 10%;
   background-color: #cddbe6;
 }
 .boxes .box1 {
+  border-radius: 10%;
   margin: 4% 2%;
   padding: 2%;
   width: 26%;
@@ -260,6 +270,7 @@ header a:hover {
   color: #66afe0;
 }
 .footer {
+  border-radius: 3;
   margin-top: 3%;
   background-color: #cddbe6;
   border-top: 6px solid #66afe0;
@@ -323,13 +334,16 @@ header a:hover {
   flex-wrap: wrap;
   justify-content: space-around;
   background-color: #cddbe6;
+  border-radius: 10%;
 }
 .containera .items {
+  border-radius: 10%;
   background-color: #e6ebee;
   width: 28%;
   margin: 1% 1%;
   margin-top: 5%;
   margin-bottom: 5%;
+  border: 2px solid #66afe0;
 }
 .containera h4 {
   padding: 2%;
@@ -344,11 +358,14 @@ header a:hover {
   text-align: center;
 }
 .liberty {
+  border-radius: 10%;
   width: 89%;
   margin: 5% 6%;
   opacity: 0.7;
 }
 .flag {
+  opacity: 0.7;
+  border-radius: 10%;
   padding-top: 13%;
   width: 89%;
   margin: 1% 5.3%;
@@ -356,5 +373,48 @@ header a:hover {
 @media only screen and (max-width: 500px) {
   .containera .items {
     width: 90%;
+  }
+}
+section {
+  padding-top: 14%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+section .person {
+  display: flex ;
+  align-items: center;
+  border-radius: 10% 10%;
+  width: 50%;
+  margin: 5%;
+  background-color: #cddbe6;
+}
+section .person img {
+  width: 30%;
+  padding: 3%;
+  border-radius: 50% 50%;
+}
+section .person h4 {
+  padding-top: 2%;
+  padding-left: 8.5%;
+  font-size: 1.4rem;
+}
+section .person a {
+  padding: 5%;
+  font-size: 3rem;
+  color: black;
+}
+section .person a:hover {
+  color: #66afe0;
+}
+@media only screen and (max-width: 500px) {
+  section {
+    padding-top: 40%;
+    flex-direction: column;
+  }
+  section .person {
+    width: 80%;
   }
 }
