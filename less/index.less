@@ -50,17 +50,17 @@ table {
 html{
       font-family: 'Irish Grover', cursive;
 
-      background-color: #16C172;
+      background-color: rgb(245, 243, 229);
      margin-top: 0%;
 }
 
 header{
       width:100%;
-      opacity: 0.8;
+      // opacity: 0.6;
       position: fixed;
       z-index:1;
       // border: 4px dashed #214F4B;
-      background-color: #09E85E;
+      background-color: rgba(182, 206, 189, 0.911);
       display: flex;
       align-items:center;
       
@@ -83,15 +83,16 @@ header{
             font-size: 1.5rem;
             // margin: 2%;
              padding: .7%;
-            color:#214F4B;
+             color: rgb(229, 245, 235);
             // border: solid 3px #2DE1FC;
             background-color: #16C172;
             border-radius: 20px 20px;
       }
       
       a:hover{
+            opacity: 0.9;
             background-color: #16C172;
-            color: #09E85E; 
+            color: rgb(106, 119, 112, 0.096); 
             // font-weight: 900;
             // color: rgb(12, 124, 72);
             padding: 2%;
@@ -109,12 +110,14 @@ header{
 
 }
 .row1{
+      // opacity: 0.7;
       margin-top: 7%;
       margin-bottom: 7%;
       padding-bottom:2%;
       display: flex;
-      background-color:#09E85E;;
+      background-color: rgba(182, 206, 189, 0.911);
       img{
+            // margin-top: 10%;
             opacity: 0.8;
             padding: 2%;
             width:50%;
@@ -123,7 +126,7 @@ header{
             opacity: 0.9;
       }
       p{
-            color:#214F4B;
+            color: rgb(229, 245, 235);
             font-size: 2.5rem;
             text-align: center;
       }
@@ -137,6 +140,7 @@ header{
             // margin: 0 auto;
       }
       a{
+            color: rgb(229, 245, 235);
             font-size: 1.5rem;
             border-radius: 20px 20px;
             padding: 3% 20%;
@@ -146,7 +150,7 @@ header{
       }
       a:hover{
             font-size: 1.9;
-            color: #09E85E;
+            color: rgb(57, 71, 63);
             padding: 4% 25%;
       }
 }
@@ -173,13 +177,13 @@ header{
 .boxes{
       display: flex;
       margin-top: 10%;
-      background-color: #09E85E;
+      background-color: rgba(182, 206, 189, 0.911);
       .box1{
             
             margin:4% 2%;
             padding: 2%;
             width:26%;
-            background-color: #16C172;
+            background-color: rgb(229, 245, 235);
             h2{
                   padding-bottom: 9%;
                   text-align: center;
@@ -192,23 +196,24 @@ header{
             i{
                   margin: 5% 30%;;
                   font-size: 5rem;
+                  color: #16C172;
             }
             
       }
       .box1 h2:hover{
-            color:white;
+            color: #16C172;
       }
       .box1 p:hover{
-            color:white;
+            color: #16C172;
       }
       .box1 i:hover{
-            color:white;
+            color:rgb(73, 70, 70);
       }
 
 }
 .footer{
       margin-top: 3%;
-      background-color: #09E85E;
+      background-color: rgba(182, 206, 189, 0.911);
 
       img{
             margin:3%;
@@ -233,9 +238,9 @@ header{
       .row1 img{
             display: none;
       }
-      body {
+      // body {}
         
-      }
+      
       header{
             padding-bottom: 2%;
             flex-direction: column;
@@ -262,4 +267,35 @@ header{
       }
       
 
+    }
+    .containera{
+          width:90%;
+
+      margin:0 auto;
+      padding-top: 20%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+
+          .items{
+                width:30%;
+                margin:1%;
+                margin-top: 3%;
+                margin-bottom: 3%;
+                
+                
+            background-color: rgba(182, 206, 189, 0.911);
+          }
+          h4{
+                padding: 2%;
+                font-size: 1.8rem;
+                text-align: center;
+                color: #16C172;
+                
+          }
+          p{
+                  font-size: 1.2rem;
+                  padding: 15% 10%;
+                  text-align: center;
+      }
     }
