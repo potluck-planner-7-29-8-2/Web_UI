@@ -275,16 +275,17 @@ header a:hover {
   background-color: #cddbe6;
   border-top: 6px solid #66afe0;
 }
+.footer .footer1 {
+  display: flex;
+  justify-content: space-between;
+}
 .footer img {
-  margin-bottom: 10%;
-  margin: 1%;
   width: 30%;
+  padding: 3%;
 }
 .footer .warrior {
-  display: inline-block;
-  width: 15%;
-  padding-left: 45%;
-  padding-top: 3%;
+  width: 10%;
+  padding: 3%;
 }
 .footer p {
   text-align: center;
